@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Debugger Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal",
+            "args": ["${input:args}"]
+        },
+        {
+            "name": "Debugger",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+        }
+    ],
+    "inputs": [
+        {
+            "id": "args",
+            "type": "promptString",
+            "description": "Enter arguments for the Python script"
+        }
+    ]
+}
