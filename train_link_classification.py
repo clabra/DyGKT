@@ -75,7 +75,7 @@ if __name__ == "__main__":
         args.save_model_name = f'{args.model_name}_seed{args.seed}'
 
         # set up logger
-        logging.basicConfig(level=logging.INFO)
+        logging.basicConfig(level=logging.DEBUG)
         logger = logging.getLogger()
         logger.setLevel(logging.DEBUG)
         os.makedirs(f"./logs/{args.model_name}/{args.dataset_name}/{args.save_model_name}/", exist_ok=True)
